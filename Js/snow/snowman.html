@@ -20,25 +20,19 @@ let circle = function (x, y, radius, fillCircle){
         ctx.stroke();
     }
 };
-let drawSnowman = function (x, y) {
-    ctx.fillStyle = "Black";
-    ctx.lineWidth = 4;
-
-    circle(x + 50, y + 110, 40, false);
-    circle(x + 50, y + 40, 30, false);
-    circle(x + 40, y + 35, 5, true);
-    circle(x + 60, y + 35, 5, true);
-
-    circle(x + 50, y + 90, 5, true);
-    circle(x + 50, y + 110, 5, true);
-    circle(x + 50, y + 130, 5, true);
-
-    ctx.fillStyle = "Blue";
-    circle(x + 50, y + 45, 5, true);
-};
-drawSnowman(0, 0);
-drawSnowman(100, 20);
-
+ctx.lineWidth = 4;
+ctx.strokeStyle = "Red";
+circle(100, 100, 10, true);
+ctx.strokeStyle = "Orange";
+circle(100, 100, 20, true);
+ctx.strokeStyle = "Yellow";
+circle(100, 100, 30, true);
+ctx.strokeStyle = "Green";
+circle(100, 100, 40, true);
+ctx.strokeStyle = "Blue";
+circle(100, 100, 50);
+ctx.strokeStyle = "Purple";
+circle(100, 100, 60);
 
 </script>
 </body>
